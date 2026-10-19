@@ -14,14 +14,7 @@
 
 <br/>
 
-```
-  ____   ____ ___ _   _    _ __   __  ____   _    _     
-  \ \ / / _ \_ _| \ | |  / \\ \ / / |  _ \ / \  | |    
-   \ V / | | | ||  \| | / _ \\ V /  | |_) / _ \ | |    
-    | || |_| | || |\  |/ ___ \| |   |  __/ ___ \| |___ 
-    |_| \___/___|_| \_/_/   \_\_|   |_| /_/   \_\_____|
-    Full-Stack MERN Engineer • Computer Science & Engineering 2027
-```
+
 
 <p align="center">
   <a href="#-engineering-benchmarks--credentials"><b>Credentials</b></a> •
@@ -94,46 +87,9 @@ vinay-pal-portfolio/
     └── package.json                    # Server scripts & dependencies
 ```
 
-### 🔁 Request Lifecycle & Security Pipeline
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Client as User / Browser
-    participant Vite as Vite Reverse Proxy (:5173)
-    participant Express as Express Gateway (:5051)
-    participant Sec as Security & Rate Limiting
-    participant Ctrl as Portfolio Controller
-    participant DB as MongoDB Atlas Database
-
-    Client->>Vite: POST /api/contact (Name, Email, Message, Honeypot)
-    Vite->>Express: Proxies HTTP to 127.0.0.1:5051
-    Express->>Sec: Helmet Security Headers + CORS Validation
-    Sec->>Sec: Check IP Window (Max 5 inquiries per 15 min)
-    alt Rate Limit Exceeded
-        Sec-->>Client: 429 Too Many Requests (Rate limit payload)
-    else Honeypot Field Filled (Bot Detected)
-        Sec-->>Client: 200 OK (Silent blackhole drop - zero bot intelligence)
-    else Legitimate Request
-        Sec->>Ctrl: Sanitized Request Body (XSS stripped)
-        Ctrl->>DB: Mongoose Schema Validation & Persistence
-        DB-->>Ctrl: Document Created (_id, createdAt)
-        Ctrl-->>Client: 201 Created (Success toast + confetti trigger)
-    end
-```
 
 ---
 
-## 🚀 Featured Production Projects
-
-| Project | Live Demo | Repository | Architecture Highlights | Primary Stack |
-| :--- | :---: | :---: | :--- | :--- |
-| **Swag-e-Swaad**<br/>*Full-Stack Food Ordering & Concierge Platform* | [🔗 Live App](https://swag-e-swaad.vercel.app) | [💻 Source](https://github.com/vinay7376/Swag-e-Swaad) | • End-to-end Razorpay payment gateway with HMAC SHA-256 signature verification<br/>• Dynamic item customization engine and real-time order state tracker<br/>• Intelligent food concierge system recommending dishes based on dietary preferences | `React` `Node.js` `Express` `MongoDB` `Razorpay API` `Tailwind CSS` |
-| **PayRecover AI**<br/>*Automated Payment Failure Recovery Engine* | ⚡ *Hackathon* | [💻 Source](https://github.com/vinay7376/payrecover-ai) | • Built for Razorpay AI Buildathon Track 03<br/>• Automated recovery pipeline evaluated on 110 synthetic INR payment failures<br/>• Deterministic policy guardrails and automated human escalation workflows | `Node.js` `Express` `MongoDB` `REST APIs` `Rule Engine` |
-| **MERN Real-Time Kanban**<br/>*High-Efficiency Agile Sprint Management* | 🎮 *In-Portfolio* | [💻 Source](https://github.com/vinay7376/kanban-board) | • Zero-latency optimistic UI updates with rollback on network failure<br/>• Column-level state machines, subtask progress tracking, and priority tagging<br/>• Playable interactive simulator embedded directly inside the portfolio | `React` `Redux Toolkit` `Framer Motion` `Tailwind CSS` |
-| **Diagramly**<br/>*Collaborative Architecture Whiteboard & Notes* | 📐 *Pre-Release* | [💻 Source](https://github.com/vinay7376/diagramly) | • Integrated Excalidraw infinite vector canvas with structured EditorJS markdown notes<br/>• Local-first IndexedDB offline caching with exportable SVG/PNG formats | `React` `Excalidraw` `EditorJS` `Vite` `Tailwind CSS` |
-
----
 
 ## ⚡ Interactive Engineering Features
 
@@ -191,66 +147,7 @@ The portfolio is packed with interactive features designed to prove frontend and
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 </div>
-
 ---
-
-## 💻 Local Development & Setup
-
-### Prerequisites
-- **Node.js:** v18.0.0 or higher (v20+ LTS recommended)
-- **npm:** v9.0.0 or higher
-- **MongoDB:** Local MongoDB daemon (`mongodb://127.0.0.1:27017`) **OR** a free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster URI
-
-### ⚡ 1-Click Launch (Windows)
-Double-click the included batch script in the project root:
-```cmd
-run.bat
-```
-*This starts the Express API on port `5051` and the Vite client on port `5173` concurrently.*
-
----
-
-### 📦 Manual Multi-Platform Setup
-
-#### 1. Clone the Repository
-```bash
-git clone https://github.com/vinay7376/vinay-pal-portfolio.git
-cd vinay-pal-portfolio
-```
-
-#### 2. Install All Dependencies
-```bash
-# Installs root, client, and server dependencies in one command
-npm run install:all
-```
-
-#### 3. Configure Environment Variables
-Create the server environment file from the provided template:
-```bash
-cp server/.env.example server/.env
-```
-
-Review or modify `server/.env`:
-```env
-# Server Network
-PORT=5051
-NODE_ENV=development
-CLIENT_ORIGIN=http://localhost:5173
-
-# Database
-MONGODB_URI=mongodb://127.0.0.1:27017/vinay_pal_portfolio
-
-# Security & Rate Limiting
-RATE_LIMIT_WINDOW_MINUTES=15
-RATE_LIMIT_MAX_REQUESTS=100
-CONTACT_RATE_LIMIT_MAX=5
-NOTIFICATION_EMAIL=vphandia7376@gmail.com
-```
-
-#### 4. Run Both Servers Concurrently
-```bash
-npm run dev
-```
 
 The services will be available at:
 - 💻 **Frontend Application:** [http://localhost:5173](http://localhost:5173)
@@ -276,30 +173,6 @@ The services will be available at:
 - 🧹 **Sanitized Query Ingestion:** All incoming strings pass through strict trim, length-boundary, and regex validations to thwart NoSQL injection and stored XSS vectors.
 - ♿ **Accessibility (a11y):** Form fields feature explicit ARIA attributes, color contrasts exceed 4.5:1 ratio (APCA validated), and all interactive elements maintain high-visibility `:focus-visible` outline rings.
 - 🚀 **Zero Client Secrets:** Production builds strip all sensitive infrastructure identifiers; database strings remain strictly backend-isolated.
-
----
-
-## 🚢 Deployment Playbook
-
-### Frontend (Vercel)
-1. Fork or import `vinay7376/vinay-pal-portfolio` into [Vercel](https://vercel.com).
-2. Set **Root Directory** to `client`.
-3. Set **Framework Preset** to `Vite`.
-4. Add environment variable:
-   - `VITE_API_URL` = `https://your-backend-api.onrender.com`
-5. Click **Deploy**.
-
-### Backend (Render / Railway)
-1. Create a **New Web Service** connected to your repository.
-2. Set **Root Directory** to `server`.
-3. Set **Build Command** to `npm install`.
-4. Set **Start Command** to `node src/server.js`.
-5. Add environment variables:
-   - `NODE_ENV` = `production`
-   - `PORT` = `5000`
-   - `CLIENT_ORIGIN` = `https://your-vercel-domain.vercel.app`
-   - `MONGODB_URI` = `mongodb+srv://<user>:<password>@cluster.mongodb.net/portfolio`
-6. Deploy and copy the public HTTPS URL into the Vercel `VITE_API_URL`.
 
 ---
 
