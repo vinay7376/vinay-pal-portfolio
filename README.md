@@ -163,7 +163,7 @@ To connect to a cloud MongoDB Atlas cluster:
 
 ### Frontend (Vercel)
 
-1. Push your repository to GitHub (`vinay7376/portfolio`).
+1. Push your repository to GitHub (`vinay7376/vinay-pal-portfolio`).
 2. Go to [Vercel](https://vercel.com/) and click "Add New Project".
 3. Select the `client` directory as the Root Directory.
 4. Framework Preset: **Vite**.
