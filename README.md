@@ -1,196 +1,324 @@
-# Vinay Pal — Production Full-Stack MERN Portfolio
+<div align="center">
 
-A world-class, production-ready personal portfolio and interactive engineering showcase for **Vinay Pal**, Full-Stack MERN Developer and Computer Science Engineering undergraduate (2023–2027) at United College of Engineering and Research (UCER), Prayagraj.
+# ⚡ Vinay Pal — Production Full-Stack MERN Portfolio
+
+<p align="center">
+  <b>Architecting resilient distributed systems, high-concurrency micro-services, and immersive glassmorphic digital experiences.</b>
+</p>
+
+[![Website](https://img.shields.io/badge/Live_Portfolio-07090e?style=for-the-badge&logo=vercel&logoColor=38bdf8)](https://swag-e-swaad.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vinay_Pal-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vinay-pal-7376dev)
+[![GitHub](https://img.shields.io/badge/GitHub-vinay7376-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinay7376)
+[![Email](https://img.shields.io/badge/Email-Get_in_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vphandia7376@gmail.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-6366f1?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+<br/>
+
+```
+  ____   ____ ___ _   _    _ __   __  ____   _    _     
+  \ \ / / _ \_ _| \ | |  / \\ \ / / |  _ \ / \  | |    
+   \ V / | | | ||  \| | / _ \\ V /  | |_) / _ \ | |    
+    | || |_| | || |\  |/ ___ \| |   |  __/ ___ \| |___ 
+    |_| \___/___|_| \_/_/   \_\_|   |_| /_/   \_\_____|
+    Full-Stack MERN Engineer • Computer Science & Engineering 2027
+```
+
+<p align="center">
+  <a href="#-engineering-benchmarks--credentials"><b>Credentials</b></a> •
+  <a href="#-architecture--system-design"><b>Architecture</b></a> •
+  <a href="#-featured-production-projects"><b>Projects</b></a> •
+  <a href="#-interactive-engineering-features"><b>Features</b></a> •
+  <a href="#-technology-arsenal"><b>Tech Arsenal</b></a> •
+  <a href="#-local-development--setup"><b>Quick Start</b></a> •
+  <a href="#-rest-api-documentation"><b>API Specs</b></a>
+</p>
 
 ---
 
-## Architecture & Technology Stack
+</div>
+
+## 🎯 Engineering Benchmarks & Credentials
+
+> Verified credentials and quantitative performance benchmarks for **Vinay Pal**, Computer Science Engineering Undergraduate (2023–2027) at **United College of Engineering and Research (UCER), Prayagraj**.
+
+| 🏆 Metric / Domain | 📊 Quantitative Achievement | 🔍 Verification & Context |
+| :--- | :--- | :--- |
+| **National CS Assessment** | **99.50%ile** | Young Turks Core CS & Data Structures National Assessment |
+| **Algorithmic Problem Solving**| **200+ Solved** | LeetCode & GeeksforGeeks (Dynamic Programming, Trees, Graphs, Hash Maps) |
+| **Industry Certification** | **IBM SkillsBuild Certified** | Full-Stack MERN Specialization & IBM PBEL Practical Internship |
+| **Competitive Hackathons** | **SIH 2025 Shortlisted** | Shortlisted for Smart India Hackathon & UHack 3.0 Finals |
+| **Fintech Hackathon** | **Razorpay AI Buildathon** | Track 03: Developed *PayRecover AI* for automated payment recovery |
+| **Academic Stature** | **B.Tech CSE (2023–2027)** | Department of Computer Science & Engineering, UCER Prayagraj |
+
+---
+
+## 🏗️ Architecture & System Design
+
+This portfolio is engineered not as a static brochure, but as an **enterprise-grade decoupled MERN web system** featuring real-time diagnostic polling, client-side optimistic UI updates, rate-limited REST controllers, and resilient fallback states.
 
 ```
 vinay-pal-portfolio/
-├── client/                     # Frontend Application
-│   ├── public/                 # Static Assets, PDF Resume, OG Images, Sitemap, Robots
+├── 🌐 client/                          # High-Performance React 18 Single-Page Application
+│   ├── public/                         # Public Assets, Sitemap, Robots.txt, PDF Resume
 │   ├── src/
-│   │   ├── components/         # Reusable Modular UI Components
-│   │   │   ├── Navbar.jsx      # Glassmorphic Sticky Header & Mobile Drawer
-│   │   │   ├── VpLogo.jsx      # Custom VP Monogram Vector
-│   │   │   ├── ProjectCard.jsx # Premium Preview Cards with Screenshot Zoom
-│   │   │   ├── CaseStudyModal.jsx # Deep Architectural Breakdown Modals
-│   │   │   ├── InteractiveTerminal.jsx # Live Diagnostics & REPL Console
-│   │   │   ├── InteractiveKanbanPreview.jsx # Live Drag & State Simulator
-│   │   │   ├── Footer.jsx      # Editorial Footer & Health Ping Indicator
-│   │   │   └── NotFound.jsx    # Custom 404 Route Handler
-│   │   ├── sections/           # Primary One-Page Portfolio Sections
-│   │   │   ├── HeroSection.jsx
-│   │   │   ├── AboutSection.jsx
-│   │   │   ├── SkillsSection.jsx
-│   │   │   ├── ProjectsSection.jsx
-│   │   │   ├── ArchitectureSection.jsx
-│   │   │   ├── ExperienceSection.jsx
-│   │   │   └── ContactSection.jsx
-│   │   ├── data/               # Verified Data Models & Constants
-│   │   └── utils/              # Resilient API Client Layer
-│   ├── index.html              # SEO, OpenGraph & Favicon Headers
-│   ├── tailwind.config.js      # Custom Dark Palette & Atmospheric Glows
-│   └── vite.config.js          # Vite Bundler with API Proxying
-└── server/                     # Backend REST API
+│   │   ├── components/                 # Atomic & Molecular Glassmorphic UI Components
+│   │   │   ├── Navbar.jsx              # Backdrop-blur sticky navigation with active link highlighting
+│   │   │   ├── VpLogo.jsx              # Custom SVG developer monogram with electric cyan gradients
+│   │   │   ├── ProjectCard.jsx         # Browser mockup cards with live links, tags & deep-dive triggers
+│   │   │   ├── CaseStudyModal.jsx      # Technical post-mortem modal with problem, solution & metrics
+│   │   │   ├── InteractiveTerminal.jsx # Live browser-based diagnostic REPL with command executor
+│   │   │   ├── InteractiveKanbanPreview.jsx # Drag-and-advance sprint simulator with state management
+│   │   │   └── Footer.jsx              # Status ping telemetry indicator & copyright
+│   │   ├── sections/                   # Primary One-Page Portfolio Sections
+│   │   │   ├── HeroSection.jsx         # Dynamic role rotators, live stats & jump navigation chips
+│   │   │   ├── AboutSection.jsx        # Engineering biography, key stats & educational background
+│   │   │   ├── SkillsSection.jsx       # Interactive Request Pipeline Simulator & 60 FPS Reactive Engine
+│   │   │   ├── ProjectsSection.jsx     # Production projects grid with category filters & modal viewer
+│   │   │   ├── ArchitectureSection.jsx # Naive vs. Production architectural deep-dive & code tabs
+│   │   │   ├── ExperienceSection.jsx   # Interactive milestone timeline & verified credentials
+│   │   │   └── ContactSection.jsx      # Rate-limited inquiry form with honeypot spam traps & confetti
+│   │   ├── utils/                      # Resilient Dual-Target API Client (Vite proxy + direct fallback)
+│   │   └── index.css                   # Custom atmospheric mesh gradients & Tailwind CSS extensions
+│   ├── index.html                      # Structured Schema.org microdata, OpenGraph & SEO metadata
+│   └── vite.config.js                  # Vite bundler configured with explicit IPv4 proxy routing
+│
+└── ⚙️ server/                          # Hardened Express.js REST API
     ├── src/
-    │   ├── config/             # Mongoose Connection & Lifecycle
-    │   ├── controllers/        # Contact Inquiries & Health Controllers
-    │   ├── middleware/         # Rate Limiting & Error Handlers
-    │   ├── models/             # Mongoose Schemas (Contact Inquiry)
-    │   ├── routes/             # REST API Routing (/api/contact, /api/health)
-    │   └── server.js           # Express Entrypoint, Helmet & CORS
-    ├── .env.example            # Environment Variable Documentation
-    └── .env                    # Local Runtime Configuration
+    │   ├── config/                     # Mongoose connection manager with reconnection backoff
+    │   ├── controllers/                # Inquiry persistence & health status controllers
+    │   ├── middleware/                 # Rate limiting, input sanitization & centralized error handling
+    │   ├── models/                     # Mongoose Schemas (ContactInquiry with TTL & indices)
+    │   ├── routes/                     # REST API Routing (/api/health, /api/contact, /api/projects)
+    │   └── server.js                   # Express application entrypoint with Helmet, CORS & Graceful Shutdown
+    ├── .env.example                    # Sample environment variables
+    └── package.json                    # Server scripts & dependencies
+```
+
+### 🔁 Request Lifecycle & Security Pipeline
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Client as User / Browser
+    participant Vite as Vite Reverse Proxy (:5173)
+    participant Express as Express Gateway (:5051)
+    participant Sec as Security & Rate Limiting
+    participant Ctrl as Portfolio Controller
+    participant DB as MongoDB Atlas Database
+
+    Client->>Vite: POST /api/contact (Name, Email, Message, Honeypot)
+    Vite->>Express: Proxies HTTP to 127.0.0.1:5051
+    Express->>Sec: Helmet Security Headers + CORS Validation
+    Sec->>Sec: Check IP Window (Max 5 inquiries per 15 min)
+    alt Rate Limit Exceeded
+        Sec-->>Client: 429 Too Many Requests (Rate limit payload)
+    else Honeypot Field Filled (Bot Detected)
+        Sec-->>Client: 200 OK (Silent blackhole drop - zero bot intelligence)
+    else Legitimate Request
+        Sec->>Ctrl: Sanitized Request Body (XSS stripped)
+        Ctrl->>DB: Mongoose Schema Validation & Persistence
+        DB-->>Ctrl: Document Created (_id, createdAt)
+        Ctrl-->>Client: 201 Created (Success toast + confetti trigger)
+    end
 ```
 
 ---
 
-## Verified Credentials & Highlights
+## 🚀 Featured Production Projects
 
-- **National Percentile:** **99.50%ile** in the *Young Turks Core CS & DSA National Competency Assessment*.
-- **Algorithmic Practice:** **200+ Problems Solved** across LeetCode and GeeksforGeeks.
-- **Academic Degree:** B.Tech in Computer Science & Engineering (2023–2027) at UCER Prayagraj.
-- **Industry Certification:** IBM SkillsBuild MERN Stack Certified & completed IBM PBEL Internship.
-- **Hackathons:** Shortlisted for **Smart India Hackathon (SIH 2025)** and **UHack 3.0**; Built **PayRecover AI** for Razorpay AI Buildathon Track 03.
-- **Featured Projects:**
-  - **PayRecover AI:** Bounded revenue-recovery pipeline across 110 synthetic INR payment failures with deterministic policy guardrails and human escalation thresholds.
-  - **Swag-e-Swaad:** Live food ordering platform (`https://swag-e-swaad.vercel.app`) with dynamic dish customization, AI food concierge, and Razorpay HMAC SHA-256 signature verification.
-  - **MERN Real-Time Kanban Board:** Drag-and-drop agile board with optimistic local state mutations and subtask progress tracking.
-  - **Diagramly:** Architectural whiteboard combining Excalidraw vector canvases with EditorJS notes.
+| Project | Live Demo | Repository | Architecture Highlights | Primary Stack |
+| :--- | :---: | :---: | :--- | :--- |
+| **Swag-e-Swaad**<br/>*Full-Stack Food Ordering & Concierge Platform* | [🔗 Live App](https://swag-e-swaad.vercel.app) | [💻 Source](https://github.com/vinay7376/Swag-e-Swaad) | • End-to-end Razorpay payment gateway with HMAC SHA-256 signature verification<br/>• Dynamic item customization engine and real-time order state tracker<br/>• Intelligent food concierge system recommending dishes based on dietary preferences | `React` `Node.js` `Express` `MongoDB` `Razorpay API` `Tailwind CSS` |
+| **PayRecover AI**<br/>*Automated Payment Failure Recovery Engine* | ⚡ *Hackathon* | [💻 Source](https://github.com/vinay7376/payrecover-ai) | • Built for Razorpay AI Buildathon Track 03<br/>• Automated recovery pipeline evaluated on 110 synthetic INR payment failures<br/>• Deterministic policy guardrails and automated human escalation workflows | `Node.js` `Express` `MongoDB` `REST APIs` `Rule Engine` |
+| **MERN Real-Time Kanban**<br/>*High-Efficiency Agile Sprint Management* | 🎮 *In-Portfolio* | [💻 Source](https://github.com/vinay7376/kanban-board) | • Zero-latency optimistic UI updates with rollback on network failure<br/>• Column-level state machines, subtask progress tracking, and priority tagging<br/>• Playable interactive simulator embedded directly inside the portfolio | `React` `Redux Toolkit` `Framer Motion` `Tailwind CSS` |
+| **Diagramly**<br/>*Collaborative Architecture Whiteboard & Notes* | 📐 *Pre-Release* | [💻 Source](https://github.com/vinay7376/diagramly) | • Integrated Excalidraw infinite vector canvas with structured EditorJS markdown notes<br/>• Local-first IndexedDB offline caching with exportable SVG/PNG formats | `React` `Excalidraw` `EditorJS` `Vite` `Tailwind CSS` |
 
 ---
 
-## Getting Started Locally
+## ⚡ Interactive Engineering Features
+
+The portfolio is packed with interactive features designed to prove frontend and backend engineering competency:
+
+### 1. 📡 Interactive Capability Radar (Skills Section)
+- **Request Pipeline Simulator:** Step-by-step interactive simulator showing how HTTP payloads move through DNS lookup, Reverse Proxy, Middleware, Auth Guard, Database query, and Response synthesis.
+- **Reactive 60 FPS Engine:** Real-time state stress-test demonstrating sub-16ms React render cycles without layout thrashing.
+- **Young Turks 99.50%ile Radar:** Visual breakdown of algorithmic competency across Dynamic Programming, Trees, Hash Maps, System Design, and Concurrency.
+
+### 2. 💻 Live Diagnostic Terminal (REPL Console)
+- An embedded interactive terminal in the Hero & System section supporting executable commands:
+  - `help` — Lists all available commands
+  - `status` — Fetches real-time server health and memory statistics from `/api/health`
+  - `skills` — Prints verified competency matrix
+  - `projects` — Displays catalog with live links
+  - `contact` — Quick-jump contact form trigger
+  - `clear` — Resets console screen
+
+### 3. 🗂️ Playable Kanban Board Preview
+- An interactive sprint board with draggable and clickable state advancement (`Backlog` → `In Progress` → `Review` → `Done`) with optimistic progress meters.
+
+### 4. 🔬 Architecture Deep-Dive (Naive vs. Production)
+- Side-by-side interactive code comparison highlighting anti-patterns (unbounded queries, unhandled errors, secret leaks) vs. production-grade patterns (rate-limiting, lean projections, input sanitization).
+
+---
+
+## 🛠️ Technology Arsenal
+
+<div align="center">
+
+### Frontend Engineering
+![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS_v3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_Bundler-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Backend & Cloud Architecture
+![Node.js](https://img.shields.io/badge/Node.js_LTS-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js_4-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB_Atlas-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose_ODM-880000?style=for-the-badge&logo=mongoose&logoColor=white)
+![REST APIs](https://img.shields.io/badge/RESTful_APIs-0052CC?style=for-the-badge&logo=postman&logoColor=white)
+![Razorpay](https://img.shields.io/badge/Razorpay_Gateway-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF)
+
+### Algorithms, Languages & Tooling
+![C++](https://img.shields.io/badge/C++_17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Python](https://img.shields.io/badge/Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+</div>
+
+---
+
+## 💻 Local Development & Setup
 
 ### Prerequisites
-
-- **Node.js:** v18.0.0 or higher (tested on Node v24 LTS)
+- **Node.js:** v18.0.0 or higher (v20+ LTS recommended)
 - **npm:** v9.0.0 or higher
-- **MongoDB:** Local MongoDB service (running on port 27017) OR a MongoDB Atlas cluster URI.
+- **MongoDB:** Local MongoDB daemon (`mongodb://127.0.0.1:27017`) **OR** a free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster URI
 
-### 1. Installation
+### ⚡ 1-Click Launch (Windows)
+Double-click the included batch script in the project root:
+```cmd
+run.bat
+```
+*This starts the Express API on port `5051` and the Vite client on port `5173` concurrently.*
 
-From the project root:
+---
 
+### 📦 Manual Multi-Platform Setup
+
+#### 1. Clone the Repository
 ```bash
-# Install backend dependencies
-cd server
-npm install
-
-# Install frontend dependencies
-cd ../client
-npm install
+git clone https://github.com/vinay7376/vinay-pal-portfolio.git
+cd vinay-pal-portfolio
 ```
 
-Or using root script:
+#### 2. Install All Dependencies
 ```bash
+# Installs root, client, and server dependencies in one command
 npm run install:all
 ```
 
-### 2. Environment Configuration
-
-Copy the example environment file for the server:
-
+#### 3. Configure Environment Variables
+Create the server environment file from the provided template:
 ```bash
-cd server
-cp .env.example .env
+cp server/.env.example server/.env
 ```
 
-Contents of `server/.env`:
+Review or modify `server/.env`:
 ```env
+# Server Network
 PORT=5051
 NODE_ENV=development
 CLIENT_ORIGIN=http://localhost:5173
+
+# Database
 MONGODB_URI=mongodb://127.0.0.1:27017/vinay_pal_portfolio
+
+# Security & Rate Limiting
 RATE_LIMIT_WINDOW_MINUTES=15
 RATE_LIMIT_MAX_REQUESTS=100
 CONTACT_RATE_LIMIT_MAX=5
 NOTIFICATION_EMAIL=vphandia7376@gmail.com
 ```
 
-### 3. Running Development Servers (One Command)
-
-From the project root (`vinay-pal-portfolio`):
-
+#### 4. Run Both Servers Concurrently
 ```bash
-# Start BOTH Backend API (port 5051) and Frontend (port 5173) together:
 npm run dev
 ```
 
-Or on Windows, simply double-click:
-```
-run.bat
-```
-
-Or if you prefer running in separate terminals:
-- **Terminal 1 (Backend):** `npm run dev:server` (Starts at http://localhost:5051)
-- **Terminal 2 (Frontend):** `npm run dev:client` (Starts at http://localhost:5173)
+The services will be available at:
+- 💻 **Frontend Application:** [http://localhost:5173](http://localhost:5173)
+- ⚙️ **Backend REST API:** [http://localhost:5051](http://localhost:5051)
+- 🩺 **API Health Check:** [http://localhost:5051/api/health](http://localhost:5051/api/health)
 
 ---
 
-## Production Build & Verification
+## 📡 REST API Documentation
 
-To verify the client production build:
-
-```bash
-cd client
-npm run build
-```
-
-This compiles optimized bundles into `client/dist/` with asset minification and zero warnings.
+| Method | Endpoint | Description | Rate Limit | Request Body | Response Codes |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `GET` | `/api/health` | Diagnostic ping reporting uptime, memory & DB state | 100 req / 15m | None | `200 OK` |
+| `GET` | `/api/projects` | Retrieves verified project list with technical case studies | 100 req / 15m | None | `200 OK` |
+| `POST`| `/api/contact` | Submits validated inquiry with anti-spam honeypot | **5 req / 15m** | JSON `{ name, email, subject, message, honeypot? }` | `201 Created`<br/>`400 Bad Request`<br/>`429 Rate Limit` |
 
 ---
 
-## MongoDB Atlas Setup Guide
+## 🛡️ Security, Reliability & Accessibility (WCAG 2.1 AA)
 
-To connect to a cloud MongoDB Atlas cluster:
-
-1. Sign in to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-2. Create a free shared cluster (M0 sandbox).
-3. Under **Database Access**, create a user with read/write privileges.
-4. Under **Network Access**, add `0.0.0.0/0` (allow from anywhere) or your hosting IP.
-5. Retrieve your connection string from the "Connect" modal:
-   ```
-   mongodb+srv://<username>:<password>@cluster0.mongodb.net/vinay_pal_portfolio?retryWrites=true&w=majority
-   ```
-6. Paste the connection string into `server/.env` as `MONGODB_URI`.
+- 🔒 **Spam & Bot Mitigation:** Integrated silent honeypot trap (`honeypot` field); automated scrapers and bots are caught and silently blackholed without leaking defensive heuristics.
+- ⏱️ **Rate Limiting Guardrails:** Powered by `express-rate-limit` on an in-memory IP store to prevent socket starvation and spam flooder attacks.
+- 🧹 **Sanitized Query Ingestion:** All incoming strings pass through strict trim, length-boundary, and regex validations to thwart NoSQL injection and stored XSS vectors.
+- ♿ **Accessibility (a11y):** Form fields feature explicit ARIA attributes, color contrasts exceed 4.5:1 ratio (APCA validated), and all interactive elements maintain high-visibility `:focus-visible` outline rings.
+- 🚀 **Zero Client Secrets:** Production builds strip all sensitive infrastructure identifiers; database strings remain strictly backend-isolated.
 
 ---
 
-## Deployment Instructions
+## 🚢 Deployment Playbook
 
 ### Frontend (Vercel)
-
-1. Push your repository to GitHub (`vinay7376/vinay-pal-portfolio`).
-2. Go to [Vercel](https://vercel.com/) and click "Add New Project".
-3. Select the `client` directory as the Root Directory.
-4. Framework Preset: **Vite**.
-5. Build Command: `npm run build`.
-6. Output Directory: `dist`.
-7. Set environment variable `VITE_API_URL` pointing to your hosted backend (e.g. `https://api.vinaypal.dev`).
-8. Click **Deploy**.
+1. Fork or import `vinay7376/vinay-pal-portfolio` into [Vercel](https://vercel.com).
+2. Set **Root Directory** to `client`.
+3. Set **Framework Preset** to `Vite`.
+4. Add environment variable:
+   - `VITE_API_URL` = `https://your-backend-api.onrender.com`
+5. Click **Deploy**.
 
 ### Backend (Render / Railway)
-
-1. In Render, select **New Web Service** and connect your repository.
-2. Root Directory: `server`.
-3. Runtime: **Node**.
-4. Build Command: `npm install`.
-5. Start Command: `node src/server.js`.
-6. Add environment variables:
-   - `NODE_ENV`: `production`
-   - `PORT`: `5000`
-   - `CLIENT_ORIGIN`: Your deployed Vercel domain (e.g. `https://vinaypal.dev`)
-   - `MONGODB_URI`: Your MongoDB Atlas connection string.
-7. Click **Deploy**.
+1. Create a **New Web Service** connected to your repository.
+2. Set **Root Directory** to `server`.
+3. Set **Build Command** to `npm install`.
+4. Set **Start Command** to `node src/server.js`.
+5. Add environment variables:
+   - `NODE_ENV` = `production`
+   - `PORT` = `5000`
+   - `CLIENT_ORIGIN` = `https://your-vercel-domain.vercel.app`
+   - `MONGODB_URI` = `mongodb+srv://<user>:<password>@cluster.mongodb.net/portfolio`
+6. Deploy and copy the public HTTPS URL into the Vercel `VITE_API_URL`.
 
 ---
 
-## Security, Performance & Accessibility (WCAG)
+## 👨‍💻 About the Author
 
-- **Sanitization & Anti-Spam:** Express middleware strips unsafe HTML tags, validates regex for emails, and enforces a honeypot field (`honeypot`) that traps automated spam bots without false positives.
-- **Rate Limiting:** `express-rate-limit` enforces strict IP windowing on `/api/contact` (max 5 requests per 15 minutes) to prevent mail exhaustion and denial-of-service.
-- **Accessible Design:** High-contrast slate-on-dark palette, visible `:focus-visible` rings for keyboard navigators, semantic headings, and `prefers-reduced-motion` compliance.
-- **Zero Secrets on Client:** All sensitive database credentials remain isolated in server environment variables.
+<div align="center">
+
+**Vinay Pal**  
+*Full-Stack MERN Developer & Computer Science Engineering Undergrad (2023–2027)*  
+**United College of Engineering and Research (UCER), Prayagraj**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vinay-pal-7376dev)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinay7376)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vphandia7376@gmail.com)
+[![Download Resume](https://img.shields.io/badge/Resume-Download_PDF-38bdf8?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/vinay7376/vinay-pal-portfolio/raw/main/client/public/Vinay_Pal_Resume.pdf)
+
+<br/>
+
+Designed and built with passion for clean code, systems design, and great user experiences.  
+© 2026 Vinay Pal. Released under the [MIT License](LICENSE).
+
+</div>
